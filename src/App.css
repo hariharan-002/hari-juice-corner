@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+nav ul li {
+    list-style: none;
+    
+    
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+
+}
+nav{
+    top: 1;
+    position: fixed;
+    width: 100%;
+    margin-top: -10px;
+    background: transparent;
+    height: 80px;
+    z-index: 100;
+    
+
+}
+.icon{
+    height: 100px;
+    width: 150px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  
+  body{
+    z-index: -100;
   }
+
+
+ .container{
+  position: relative;
+  margin-top: -400px;
+  background:white;
+  height: 200px;
+  filter: opacity(100%);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  margin-left: 40px;
+
+  
+  
+ }
+ .add{
+  position: relative;
+  margin-top: -400px;
+  margin-left: 20px;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid white ;
+
+ }
+ .content button{
+  background: transparent;
+  border-radius: 10px;
+  margin-left: 35px;
+
+
+ }
+ button{
+  background: transparent;
+  border-radius: 60px;
+  width: 200px;
+  height: 50px;
+  border: transparent;
+  filter: drop-shadow(2px 2px 2px solid black);
+ }
+
+  
+ .about-container {
+  margin-top: 100px;
+  border: 1px solid white;
+ 
+ }
+
+.dropdown-content-1 {
+  
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 16px;
+  margin-left: -500px;
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dropdown-content-1 h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dropdown-content-1 p {
+  margin-bottom: 10px;
+}
+/* .nav-item.dropdown:hover .dropdown-content-1 {
+  display: block;
+} */
+
+
+nav ul li select {
+  border: transparent;
+ 
+}
+.container button{
+  height: 30px ;
+  width: 100px;
+  border: 1px solid black ;
+  background: red;
+
+}
+.images{
+  height: 1000px ;
+  width: 100%;
+}
+@media  screen and (max-width:600px) {
+
+  nav{
+    scale: 70%;
+    margin-left: -100px;
+    top: 0;
+    
+  }
+  nav ul li select {
+    font-size: large;
+  }
+  nav ul li button{
+    font-size: large;
+  }
+  .images{
+       height: 400px;
+       margin-top: 15%;
+  }
+  .add{
+    position: relative;
+    margin-top: -100px;
+    margin-left: 100px;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid white ;
+    scale: 70%;
+  
+   }
+   .container{
+    position: relative;
+    margin-top: 50px;
+    background:white;
+    height: 200px;
+    width: 700px;
+    filter: opacity(100%);
+    border-radius: 10px;
+    border: 1px solid transparent;
+    margin-left: 70px;
+   
+    scale: 80%;
+    
+  
+    
+    
+   }
+   .dropdown-content-1 {
+    
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 16px;
+    margin-left: -300px;
+    margin-top: 20px;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 80%;
+    scale: 80%;
+  }
+  .social-icons {
+    display: flex;
+    scale: 70%;
+    margin-top: -200px;
+  }
+
+
+  
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 50%;
+}
+
+.footer-content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.social-icons {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contact-details {
+  margin-top: 10px;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+.home-image{
+  width: 100%;
+  margin-top: 20px;
 }
